@@ -1,0 +1,1281 @@
+@charset "UTF-8";
+/*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  min-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Serif JP", serif;
+}
+body .header {
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+}
+body .header__logo {
+  margin-left: 8%;
+  width: 40%;
+  padding-top: 1%;
+}
+@media (max-width: 767px) {
+  body .header__logo {
+    width: 65%;
+    margin: 3%;
+    padding-left: 1%;
+  }
+}
+body .header__logo h1 {
+  padding-bottom: 5%;
+}
+@media (max-width: 767px) {
+  body .header__logo h1 {
+    padding-bottom: 0;
+  }
+}
+body .header__logo img {
+  width: 20vw;
+}
+@media (max-width: 767px) {
+  body .header__logo img {
+    width: 100%;
+  }
+}
+body .header__top {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: "Noto Serif JP";
+  line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  z-index: 999;
+  padding: 1% 0;
+}
+@media (max-width: 767px) {
+  body .header__top {
+    position: static;
+    font-size: 3vw;
+    text-align: center;
+    background-color: #fff;
+  }
+}
+body .header__nav {
+  width: 80%;
+  padding-right: 22%;
+}
+@media (max-width: 767px) {
+  body .header__nav {
+    background-color: #ffffff;
+    position: absolute;
+    top: 8.5%;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+body .header__navLink {
+  position: relative;
+}
+body .header__navList {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2%;
+}
+@media (max-width: 767px) {
+  body .header__navList {
+    display: block;
+    position: absolute;
+    left: 0;
+    padding-right: 76%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+  }
+}
+body .header__navItems {
+  border: 1px solid #000;
+  font-size: 1.2vw;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP";
+  margin: 1%;
+  width: 13%;
+  text-align: center;
+  line-height: 1.5em;
+}
+@media (max-width: 767px) {
+  body .header__navItems {
+    display: none;
+    border-style: none;
+    width: 100%;
+    font-size: 4vw;
+    padding: 8%;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+body .header .slider {
+  margin: 0;
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+body .header .slider .swiper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+body .header .slider .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  body .header .slider .swiperpc {
+    display: none;
+  }
+}
+body .header .slider .swipersp {
+  display: none;
+}
+@media (max-width: 767px) {
+  body .header .slider .swipersp {
+    display: block;
+  }
+}
+body .header__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 6%;
+  padding-left: 8%;
+  font-size: 2.6vw;
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  margin: 0;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  body .header__bottom {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 7.5vw;
+    width: 100%;
+    padding: 3% 0;
+    margin: 0 auto;
+  }
+}
+body .header__btn {
+  position: absolute;
+  top: 1%;
+  right: 7%;
+  width: 14%;
+  font-size: 1vw;
+  margin-top: 1%;
+  z-index: 999;
+  font-family: "Noto Sans JP";
+  background-color: #0097a7;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 1%;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  body .header__btn {
+    display: block;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 5vw;
+    background-color: #0097a7;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 3%;
+    margin-bottom: 8%;
+    margin-left: 26%;
+  }
+}
+body .header .fa-chevron-right {
+  padding-left: 2%;
+}
+body .header__spHr {
+  display: none;
+}
+@media (max-width: 767px) {
+  body .header__spHr {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+body .header__hamburger {
+  display: none;
+}
+@media (max-width: 767px) {
+  body .header__hamburger {
+    display: block;
+    position: absolute;
+    top: 1.5%;
+    right: 2%;
+    width: 7%;
+    font-size: 3vw;
+    color: #606060;
+  }
+}
+body .header .fa-bars {
+  width: 10%;
+  font-size: 7vw;
+  padding-top: 15%;
+}
+body .attraction {
+  text-align: center;
+  background-color: #ffffff;
+  width: 76%;
+  margin: 0 auto;
+  padding: 4.5% 0;
+  gap: 10%;
+}
+@media (max-width: 767px) {
+  body .attraction {
+    width: 100%;
+    padding: 8% 0;
+  }
+}
+body .attraction__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 10%;
+  padding-left: 0;
+  margin-bottom: 10%;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  body .attraction__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+body .attraction__item {
+  width: 15vw;
+}
+@media (max-width: 767px) {
+  body .attraction__item {
+    margin: 17% auto;
+    width: 100%;
+  }
+}
+body .attraction__circle {
+  position: relative;
+  display: inline-block;
+  width: 11.7vw;
+  height: 11.7vw;
+  border-radius: 50%;
+  border: 3px solid #0097a7;
+}
+body .attraction__inner {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 1vw;
+}
+body .attraction__inner p:first-child {
+  margin: 0;
+  font-size: 1.75vw;
+  color: #0097a7;
+  font-weight: 700;
+  font-family: "Noto Serif JP";
+}
+@media (max-width: 767px) {
+  body .attraction__inner p:first-child {
+    font-size: 6.5vw;
+  }
+}
+body .attraction__inner p:last-child {
+  padding-top: 10%;
+  font-size: 3.5vw;
+  font-family: "Noto Sans JP";
+  color: #0097a7;
+}
+@media (max-width: 767px) {
+  body .attraction__inner p:last-child {
+    font-size: 13vw;
+  }
+}
+body .attraction__sentence {
+  font-size: 1.75vw;
+  margin-top: 10%;
+  font-family: "Noto Sans JP";
+}
+@media (max-width: 767px) {
+  body .attraction__sentence {
+    font-size: 5.3vw;
+  }
+}
+body .appeal {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4.5% 0;
+  z-index: 0;
+  background-color: #b5e9ee;
+}
+@media (max-width: 767px) {
+  body .appeal {
+    width: 100%;
+    padding: 16% 0;
+  }
+}
+body .appeal .title {
+  position: relative;
+  width: 70%;
+  z-index: 1;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  color: #0097a7;
+}
+@media (max-width: 767px) {
+  body .appeal .title {
+    font-size: 9vw;
+    width: 92%;
+  }
+}
+body .appeal .onlySp {
+  display: none;
+}
+@media (max-width: 767px) {
+  body .appeal .onlySp {
+    display: block;
+  }
+}
+body .appeal__list {
+  text-align: center;
+  padding-top: 5%;
+  line-height: 2em;
+  width: 30%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  body .appeal__list {
+    width: 84%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 15%;
+  }
+}
+body .appeal__items {
+  font-size: 1.75vw;
+  font-family: "Noto Sans JP";
+  text-align: start;
+}
+@media (max-width: 767px) {
+  body .appeal__items {
+    font-size: 5vw;
+  }
+}
+body .appeal__items:first-child {
+  padding-bottom: 8%;
+}
+body .appeal .button {
+  margin: 5% auto 0;
+  text-align: center;
+  background-color: #0097a7;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  border-radius: 15px;
+  width: 41%;
+  border-style: none;
+  font-size: 2.3vw;
+  font-family: "Noto Sans JP";
+  padding: 1%;
+}
+@media (max-width: 767px) {
+  body .appeal .button {
+    width: 92%;
+    font-size: 5.3vw;
+    padding: 3%;
+    margin: 16% auto;
+    margin-bottom: 0;
+  }
+}
+body .appeal .button__anker {
+  padding: 1%;
+  position: relative;
+  font-family: "Noto sans JP";
+  font-weight: bold;
+}
+body .appeal .fa-chevron-right {
+  padding-left: 2%;
+}
+body .character {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  padding: 4.5% 0;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  body .character {
+    width: 100%;
+    padding: 16% 0;
+  }
+}
+body .character .title {
+  position: relative;
+  width: 70%;
+  z-index: 1;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  color: #0097a7;
+}
+@media (max-width: 767px) {
+  body .character .title {
+    font-size: 9vw;
+    width: 92%;
+  }
+}
+body .character .titleBackgroundColor {
+  background-color: #b5e9ee;
+}
+body .character__list {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  body .character__list {
+    width: 96%;
+  }
+}
+body .character__items {
+  width: 100%;
+  margin-top: 3%;
+}
+@media (max-width: 767px) {
+  body .character__items {
+    margin-top: 16%;
+  }
+}
+body .character__number {
+  font-size: 3.5vw;
+  font-family: "Noto Serif JP";
+  font-weight: 400;
+  color: #606060;
+}
+body .character__subTitle {
+  font-size: 2.7vw;
+  font-family: "Noto Serif JP";
+  font-weight: 400;
+  margin: 3% 0;
+  color: #606060;
+}
+@media (max-width: 767px) {
+  body .character__subTitle {
+    font-size: 8.5vw;
+    line-height: 1.5em;
+    margin: 9% 0;
+  }
+}
+body .character .onlySp {
+  display: none;
+}
+@media (max-width: 767px) {
+  body .character .onlySp {
+    display: block;
+  }
+}
+body .character__table {
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 2%;
+  border-collapse: separate;
+  border-spacing: 0.7vw 0.7vw;
+}
+@media (max-width: 767px) {
+  body .character__table {
+    width: 100%;
+    border-spacing: 2.7vw 2.7vw;
+  }
+}
+body .character__tableRow:last-child td:last-child {
+  border-radius: 0 0 15px;
+}
+body .character__tableRow:last-child td:first-child {
+  border-radius: 0 0 0 15px;
+}
+body .character__tableHeader {
+  background-color: #0097a7;
+  font-size: 2.3vw;
+  text-align: center;
+  height: 100%;
+  color: #ffffff;
+  border-radius: 15px 15px 0 0;
+  padding: 1.3% 17%;
+}
+@media (max-width: 767px) {
+  body .character__tableHeader {
+    font-size: 4.8vw;
+    padding: 5% 0;
+  }
+}
+body .character__tableDataBigger {
+  background-color: #dddddd;
+  font-size: 1.75vw;
+  width: 24%;
+  vertical-align: middle;
+  font-family: "Noto Sans JP";
+}
+@media (max-width: 767px) {
+  body .character__tableDataBigger {
+    font-size: 3.2vw;
+    padding: 15% 0;
+    width: 30%;
+  }
+}
+body .character__tableDataBigger:last-child {
+  border-radius: 15px;
+}
+body .character__tableDataSmaller {
+  background-color: #ece2e2;
+  font-size: 1.2vw;
+  text-align: start;
+  font-family: "Noto Sans JP";
+  padding: 1.5% 3%;
+  line-height: 1.75vw;
+}
+@media (max-width: 767px) {
+  body .character__tableDataSmaller {
+    font-size: 3.2vw;
+    padding: 4vw 8vw;
+    line-height: 6.4vw;
+  }
+}
+body .character__itemList {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4%;
+}
+@media (max-width: 767px) {
+  body .character__itemList {
+    flex-direction: column;
+    padding: 2%;
+  }
+}
+body .character__priceItems:first-child {
+  width: 46%;
+  padding-right: 3%;
+}
+@media (max-width: 767px) {
+  body .character__priceItems:first-child {
+    width: 100%;
+    padding: 0;
+  }
+}
+body .character__priceItems:last-child {
+  width: 46%;
+  padding-left: 3%;
+}
+@media (max-width: 767px) {
+  body .character__priceItems:last-child {
+    width: 100%;
+    padding: 0;
+  }
+}
+body .character__priceTitle {
+  font-size: 2.7vw;
+  font-family: "Noto Sans JP";
+  padding: 1.5%;
+  background-color: #0097a7;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  body .character__priceTitle {
+    font-size: 9.6vw;
+  }
+}
+body .character__price {
+  color: #0097a7;
+  font-size: 5.8vw;
+  font-family: "Noto Serif JP";
+  font-weight: 700;
+  margin-top: 6%;
+}
+@media (max-width: 767px) {
+  body .character__price {
+    font-size: 16vw;
+    margin-bottom: 16%;
+    margin-top: 15%;
+  }
+}
+body .character__priceTax {
+  font-size: 1.75vw;
+  font-family: "Noto Serif JP";
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  body .character__priceTax {
+    font-size: 6.4vw;
+  }
+}
+body .character__comment {
+  font-size: 1.2vw;
+  font-family: "Noto Sans JP";
+  padding: 1%;
+  padding-top: 2%;
+}
+@media (max-width: 767px) {
+  body .character__comment {
+    font-size: 3.2vw;
+    padding: 3%;
+  }
+}
+body .character__imgItems {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  body .character__imgItems {
+    margin-bottom: 5%;
+  }
+}
+body .character__img {
+  width: 85%;
+}
+@media (max-width: 767px) {
+  body .character__img {
+    width: 100%;
+  }
+}
+body .character .animated {
+  opacity: 0;
+}
+body .character__imgSentence {
+  margin: 0 auto;
+  width: 80%;
+  text-align: start;
+  font-size: 1.2vw;
+  font-family: "Noto Sans JP";
+  padding-top: 1.5vw;
+}
+@media (max-width: 767px) {
+  body .character__imgSentence {
+    width: 95%;
+    font-size: 3.2vw;
+    padding: 0 3%;
+    padding-top: 3vw;
+  }
+}
+body .character__mapContainer {
+  width: 100%;
+}
+body .character__map {
+  width: 100%;
+}
+body .character__address {
+  font-size: 1.75vw;
+  font-family: "Noto Sans JP";
+  padding: 1%;
+}
+@media (max-width: 767px) {
+  body .character__address {
+    font-size: 4.8vw;
+  }
+}
+body .character__schedule {
+  width: 70%;
+  font-size: 1.75vw;
+  font-family: "Noto Sans JP";
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  body .character__schedule {
+    width: 100%;
+    font-size: 3.2vw;
+  }
+}
+body .character__schedule tbody tr {
+  border-bottom: 1px solid;
+}
+body .character__schedule tbody tr:first-child {
+  border-bottom: none;
+}
+body .character__schedule--green {
+  background-color: #0097a7;
+  color: #ffffff;
+}
+body .character__schedule--days {
+  width: 5%;
+  padding: 1%;
+}
+body .faq {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 4.5% 0;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  body .faq {
+    width: 100%;
+    padding: 16% 0;
+  }
+}
+body .faq .title {
+  position: relative;
+  width: 70%;
+  z-index: 1;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  color: #0097a7;
+}
+@media (max-width: 767px) {
+  body .faq .title {
+    font-size: 8.5vw;
+    width: 92%;
+  }
+}
+body .faq__list {
+  width: 100%;
+  font-size: 1.5vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  color: #0097a7;
+  padding-top: 5%;
+}
+@media (max-width: 767px) {
+  body .faq__list {
+    width: 90%;
+    padding-top: 8%;
+  }
+}
+body .faq__items {
+  padding-top: 3%;
+}
+body .faq__question {
+  display: flex;
+  border-bottom: 1px solid;
+  text-align: left;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1%;
+}
+@media (max-width: 767px) {
+  body .faq__question {
+    font-size: 4vw;
+  }
+}
+body .faq__question::before { /* 閉じている時 */
+  content: "＋";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  background-color: #0097a7;
+  color: #ffffff;
+  width: 2vw;
+  height: 2vw;
+  font-size: 2vw;
+}
+@media (max-width: 767px) {
+  body .faq__question::before {
+    width: 8vw;
+    height: 8vw;
+    font-size: 8vw;
+  }
+}
+body .faq__question.active::before { /* 開いている時 */
+  content: "－";
+  background-color: #0097a7;
+  color: #ffffff;
+}
+body .faq__answer {
+  display: flex;
+  padding-top: 1%;
+}
+@media (max-width: 767px) {
+  body .faq__answer {
+    font-size: 4vw;
+  }
+}
+body .faq__alphabet {
+  font-size: 1.75vw;
+  font-family: "Noto Serif JP";
+  width: 1%;
+}
+@media (max-width: 767px) {
+  body .faq__alphabet {
+    font-size: 6.4vw;
+    width: 8%;
+    line-height: 2em;
+  }
+}
+body .faq__sentence {
+  text-align: left;
+  font-size: 1.3vw;
+  font-family: "Noto Sans JP";
+  width: 80%;
+  padding-left: 4%;
+  padding-top: 1%;
+}
+@media (max-width: 767px) {
+  body .faq__sentence {
+    font-size: 4.2vw;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
+body .faq__sentenceColor {
+  color: #000000;
+}
+body .footer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4.5% 0;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  body .footer {
+    width: 95%;
+    padding: 16% 0;
+  }
+}
+body .footer__title {
+  position: relative;
+  width: 35%;
+  z-index: 1;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5vw;
+  font-family: "Noto Serif JP";
+  font-weight: 700;
+  color: #0097a7;
+}
+@media (max-width: 767px) {
+  body .footer__title {
+    font-size: 2vw;
+    width: 92%;
+  }
+}
+body .footer__logo {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  body .footer__logo {
+    width: 100%;
+  }
+}
+body .footer__copyright {
+  font-size: 0.9vw;
+  font-family: "Noto Sans JP";
+  text-align: center;
+  padding-top: 2%;
+}
+@media (max-width: 767px) {
+  body .footer__copyright {
+    font-size: 2.9vw;
+    margin-top: 6%;
+    padding: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
