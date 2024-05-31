@@ -13,10 +13,8 @@
     <!-- Webフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- その他のライブラリのCSS -->
     <link rel="stylesheet" href="scss/animate.css">
     <link rel="stylesheet" href="scss/style.css">
@@ -27,330 +25,213 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
-        <div class="header__logo">
-            <h1>
-            <a href="#"><img src="images/header-logo.png" alt="Kirameki Total Beauty"></a>
-            </h1>
-        </div>
-            
-        <nav class="header__nav">
-            <ul class="header__navList">
-            <li class="header__navItems">
-                <a href="#service" class="header__navLink">選ばれる3つの理由</a>
-            </li>
-            <li class="header__navItems">
-                <a href="#access" class="header__navLink">コース・目的</a>
-            </li>
-            <li class="header__navItems">
-                <a href="#faq" class="header__navLink">費 用</a>
-            </li>
-            </ul>
-        </nav>
-        </div>
-        
-        <div class="slider">
-            <!-- Slider main container -->
-            <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                <img src="images/mainVIsual_pc.jpg.png" alt="スライド画像1" class="swiperpc">
-                <img src="img/cover_01_sp.png" alt="spスライド画像1" class="swipersp">
-                </div>
-                <div class="swiper-slide">
-                <img src="img/cover_02_pc.png" alt="スライド画像2" class="swiperpc">
-                <img src="img/cover_02_sp.png" alt="spスライド画像2" class="swipersp">
-                </div>
-                <div class="swiper-slide">
-                <img src="img/cover_03_pc.png" alt="スライド画像3" class="swiperpc">
-                <img src="img/cover_03_sp.png" alt="spスライド画像3" class="swipersp">
-                </div>
+            <h1 class="header__logo"><a href="#"><img src="images/header-logo.png" alt="Kirameki Total Beauty"></a></h1>
+            <nav class="header__nav">
+                <ul class="header__navList">
+                    <li class="header__navItems">
+                        <a href="#" class="header__navLink">選ばれる3つの理由</a>
+                    </li>
+                    <li class="header__navItems">
+                        <a href="#" class="header__navLink">コース・目的</a>
+                    </li>
+                    <li class="header__navItems">
+                        <a href="#" class="header__navLink">費 用</a>
+                    </li>
+                    <li class="header__navItems">
+                        <a href="#" class="header__btn">入学説明会に申し込む</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__hamburger hamburger" id="js-hamburger">
+                <i class="fas fa-bars"></i>
             </div>
-            </div>
-        </div>
-        <div class="header__bottom">
-            <p>いつまでもキレイでいたい</p>
-            <p>すべての女性のために</p>
-        </div>
-        <a href="#" class="header__btn">入学説明会に申し込む<i class="fas fa-chevron-right"></i></a>
-
-        <hr class="header__spHr">
-        <div class="header__hamburger hamburger" id="js-hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
     </header>
-
-        <!-- <div class="attraction">
-        <ul class="attraction__list">
-            <li class="attraction__item">
-            <div class="attraction__circle">
-                <div class="attraction__inner">
-                <p>魅力</p>
-                <p>1</p>
+        
+    <div class="mainVisual">
+        <div class="mainVisual__contents">
+            <div class="mainVisual__achievement">
+                <img src="images/frame-left.png" alt="">
+                <div class="mainVisual__message">
+                    <p>難関大学の合格実績</p>
+                    <p>No.<span class="mainVisual__message-large">1</span></p>
                 </div>
+                <img src="images/frame-right.png" alt="">
             </div>
-            <p class="attraction__sentence">医師による</p>
-            <p class="attraction__sentence">カウンセリング</p>
-            </li>
-            <li class="attraction__item">
-            <div class="attraction__circle">
-                <div class="attraction__inner">
-                <p>魅力</p>
-                <p>2</p>
-                </div>
+            <div class="mainVisual__letters">
+                <p>現役高校生・高卒生</p>
+                <p>入学説明会の</p>
+                <p>お申し込み開始</p>
             </div>
-            <p class="attraction__sentence">安心の</p>
-            <p class="attraction__sentence">定額料金</p>
+          </div>
+        <ul class="mainVisual__list">
+            <li class="mainVisual__items">
+                <a href="#" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
             </li>
-            <li class="attraction__item">
-            <div class="attraction__circle">
-                <div class="attraction__inner">
-                <p>魅力</p>
-                <p>3</p>
-                </div>
-            </div>
-            <p class="attraction__sentence">全室個室を</p>
-            <p class="attraction__sentence">お約束</p>
+            <li class="mainVisual__items">
+                <a href="#" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
             </li>
-            <li class="attraction__item">
-            <div class="attraction__circle">
-                <div class="attraction__inner">
-                <p>魅力</p>
-                <p>4</p>
-                </div>
-            </div>
-            <p class="attraction__sentence">東京駅から</p>
-            <p class="attraction__sentence">徒歩3分</p>
+            <li class="mainVisual__items">
+                <a href="#" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
             </li>
-            
         </ul>
     </div>
 
-    <section class="appeal">
-        <h2 class="title">美容に特化した<br class="onlySp">医師が監修したサロン</h2>
-        <ul class="appeal__list">
-            <li class="appeal__items"><i class="far fa-square"></i>&nbsp;&nbsp;無理な勧誘は一切ありません。</li>
-            <li class="appeal__items"><i class="far fa-square"></i>&nbsp;&nbsp;必要な施術のみをご案内します。</li>
+    <ul class="mainVisual__listSp">
+        <li class="mainVisual__items">
+            <a href="#" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
+        </li>
+        <li class="mainVisual__items">
+            <a href="#" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
+        </li>
+        <li class="mainVisual__items">
+            <a href="#" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
+        </li>
+    </ul>
+
+    <section class="reason">
+        <h2 class="reason__title">選ばれる<span class="reason__title-large">3</span>つの理由</h2>
+        <ul class="reason__list">
+            <li class="reason__items">
+                <img src="images/pht_reason01.jpg.png" alt="選ばれる理由1" class="reason__img">
+                <div class="reason__textcontents">
+                    <h3 class="reason__point">Point<span class="reason__point-large">1</span></h3>
+                    <p class="reason__subtitle">実績のある講師陣だから安心</p>
+                    <p class="reason__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </li>
+            <li class="reason__items">
+                <img src="images/pht_reason02.jpg.png" alt="選ばれる理由2" class="reason__img">
+                <div class="reason__textcontents">
+                    <h3 class="reason__point">Point<span class="reason__point-large">2</span></h3>
+                    <p class="reason__subtitle">オンラインにも対応だから、早送り巻き戻し視聴できる。</p>
+                    <p class="reason__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </li>
+            <li class="reason__items">
+                <img src="images/pht_reason03.jpg.png" alt="選ばれる理由3" class="reason__img">
+                <div class="reason__textcontents">
+                    <h3 class="reason__point">Point<span class="reason__point-large">3</span></h3>
+                    <p class="reason__subtitle">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</p>
+                    <p class="reason__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </li>
         </ul>
-        <div class="button">
-            <a href="#" class="button__anker">無料カウンセリング<i class="fas fa-chevron-right"></i></a>
-        </div>
     </section>
 
-    <section class="character" id="service">
-        <h2 class="title">4つの特徴</h2>
-        <ul class="character__list">
-        <li class="character__items">
-            <p class="character__number">01.</p>
-            <p class="character__subTitle"><span class="titleBackgroundColor">美容専門医</span>による<br class="onlySp">カウンセリング</p>
-            <table class="character__table">
-            <tr class="character__tableRow">
-                <th colspan="2" class="character__tableHeader">施術前にじっくり丁寧にカウンセリング</th>
-            </tr>
-            <tr class="character__tableRow">
-                <td class="character__tableDataBigger">アンケート記入</td><td class="character__tableDataSmaller">約30問のアンケートを記入していただきます。<br>
-                説明しにくい症状も感覚で記入できるよう工夫しています。
-                </td>
-            </tr>
-            <tr class="character__tableRow">
-                <td class="character__tableDataBigger">カウンセリング</td><td class="character__tableDataSmaller">カウンセリングは美容に特化した医師が担当します。<br>
-                お気軽に美容に関するお悩みをご相談ください。
-                </td>
-            </tr>
-            <tr class="character__tableRow">
-                <td class="character__tableDataBigger">お見積もり</td><td class="character__tableDataSmaller">当サロンではその場でのお申し込みを行っておりません。<br>
-                後日お送りするお見積もりをご確認いただきご検討ください。
-                </td>
-            </tr>
-            </table>
-        </li>
-        <li class="character__items">
-            <p class="character__number">02.</p>
-            <p class="character__subTitle">月々の施術費用は<br class="onlySp"><span class="titleBackgroundColor">19,800円(税込)</span></p>
-            <ul class="character__itemList">
-            <li class="character__priceItems">
-                <p class="character__priceTitle">入会金</p>
-                <p class="character__price">8,800円<small class="character__priceTax">(税込)</small></p>
-            </li>
-            <li class="character__priceItems">
-                <p class="character__priceTitle">月額料金</p>
-                <p class="character__price">19,800円<small class="character__priceTax">(税込)</small></p>
-            </li>
+    <div class="application">
+        <p class="application__sentence">入学ご検討の方は、まずは入学説明会にお越しください</p>
+        <a href="#" class="application__btn">入学説明会に申し込む</a>
+    </div>
+
+    <section class="course">
+        <h2 class="course__title">コース・目的</h2>
+        <div class="tab_box">
+            <ul class="btn_area">
+                <p class="tab_btn active">学年別から選ぶ</p>
+                <p class="tab_btn">目的別から選ぶ</p>
             </ul>
-            <p class="character__comment">治療薬を処方させていただく場合は別途費用が発生いたします
-            </p>
-        </li>
-        <li class="character__items">
-            <p class="character__number">03.</p>
-            <p class="character__subTitle"><span class="titleBackgroundColor">施術は全室個室</span>で<br class="onlySp">プライベートを確保</p>
-            <ul class="character__itemList">
-            <li class="character__imgItems">
-                <img src="img/point3_01.png" alt="個室の画像1" class="character__img animated down">
-                <p class="character__imgSentence">カーテンで区切られた半個室ではなく、扉をしめること
-                でプライベートな時間を完全に確保できる個室をご用意
-                しております。</p>
-            </li>
-            <li class="character__imgItems">
-                <img src="img/point3_02.png" alt="個室の画像2" class="character__img animated down">
-                <p class="character__imgSentence">リラックスした時間をお過ごしいただくために、その時
-                の気分に合わせて、お好きなアロマをお選びいただくこ
-                とができます。
-                </p>
-            </li>
+            <ul class="panel_area">
+                <ul class="tab_panel active">
+                    <li>
+                        <img src="images/pht_cource01.png.png" alt="">
+                        <p>高卒生</p>
+                    </li>
+                    <li>
+                        <img src="images/pht_cource02.png.png" alt="">
+                        <p>高校3年生</p>
+                    </li>
+                    <li>
+                        <img src="images/pht_cource03.png.png" alt="">
+                        <p>高校2年生</p>
+                    </li>
+                    <li>
+                        <img src="images/pht_cource04.png.png" alt="">
+                        <p>高校1年生</p>
+                    </li>
+                </ul>
+                <ul class="tab_panel">
+                    <li>
+                        <img src="images/pht_cource05.png.png" alt="">
+                        <p>難関大学・医学部合格を目指す</p>
+                    </li>
+                    <li>
+                        <img src="images/pht_cource06.png.png" alt="">
+                        <p>名門私立大学合格を目指す</p>
+                    </li>
+                    <li>
+                        <img src="images/pht_cource07.png.png" alt="">
+                        <p>国公立大学合格を目指す</p>
+                    </li>
+                    <li>
+                        <img src="images/pht_cource08.png.png" alt="" class="course__img">
+                        <img src="images/arrow-right.png" alt="" class="course__arrow">
+                        <p>海外の大学合格を目指す</p>
+                    </li>
+                </ul>
             </ul>
-        </li>
-        <li class="character__items">
-            <p class="character__number" id="access">04.</p>
-            <p class="character__subTitle">アクセス便利な<br class="onlySp"><span class="titleBackgroundColor">東京駅から徒歩3分</span>
-            </p>
-            <div class="character__mapContainer">
-            <iframe class="character__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280306944976!2d139.7645445112772!3d35.68123617247289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1711074852757!5m2!1sja!2sjp" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <p class="character__comment">JR東京駅丸の内地下中央口改札から出て徒歩3分。<br class="onlySp">雨の日でも濡れずにお越しいただくことができます。
-            <p class="character__address">東京都中央区丸の内△-△△-△△<br class="onlySp"> ◎◎◎◎◎◎ビル16階
-            </p>
-            <table class="character__schedule">
-            <tr class="character__schedule--green">
-                <td class="character__schedule--days"></td>
-                <td class="character__schedule--days"></td>
-                <td class="character__schedule--days">月</td>
-                <td class="character__schedule--days">火</td>
-                <td class="character__schedule--days">水</td>
-                <td class="character__schedule--days">木</td>
-                <td class="character__schedule--days">金</td>
-                <td class="character__schedule--days">土</td>
-                <td class="character__schedule--days">日祝</td>
-                <td class="character__schedule--days"></td>
-            </tr>
-            <tr class="character__tableRow">
-                <td class="character__schedule--days"></td>
-                <td class="character__schedule--days">午前</td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days">休</td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"></td>
-            </tr>
-            <tr class="character__tableRow">
-                <td class="character__schedule--days"></td>
-                <td class="character__schedule--days">午後</td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days">休</td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"><i class="fas fa-circle"></i></td>
-                <td class="character__schedule--days"></td>
-            </tr>              
-            </table>
-        </li>
-        </ul>
-    </section>
-
-    <section class="appeal">
-        <h2 class="title">美容に特化した<br class="onlySp">医師が監修したサロン</h2>
-        <ul class="appeal__list">
-            <li class="appeal__items"><i class="far fa-square"></i>&nbsp;&nbsp;無理な勧誘は一切ありません。</li>
-            <li class="appeal__items"><i class="far fa-square"></i>&nbsp;&nbsp;必要な施術のみをご案内します。</li>
-        </ul>
-        <div class="button">
-            <a href="#" class="button__anker">無料カウンセリング<i class="fas fa-chevron-right"></i></a>
         </div>
     </section>
 
-    <section class="faq" id="faq">
-        <h2 class="title">FAQ</h2>
-        <ul class="faq__list">
-        <li class="faq__items">
-            <div class="faq__question">
-                <p class="faq__alphabet">Q.</p>
-                <p class="faq__sentence">肌にアレルギーがあるのですが施術を受けることはできますか？</p>
+    <div class="application">
+        <p class="application__sentence">入学ご検討の方は、まずは入学説明会にお越しください</p>
+        <a href="#" class="application__btn">入学説明会に申し込む</a>
+    </div>
 
-            </div>
-            <div class="faq__answer">
-                <p class="faq__alphabet">A.
-                <p class="faq__sentence"><span class="faq__sentenceColor">カウンセリング時に医師にご相談ください。</span></p>
-            </div>
-        </li>
-        <li class="faq__items">
-            <div class="faq__question">
-                <p class="faq__alphabet">Q.</p>
-                <p class="faq__sentence">どれくらいの期間通うことになりますか？</p>
-
-            </div>
-            <div class="faq__answer">
-                <p class="faq__alphabet">A.
-                <p class="faq__sentence"><span class="faq__sentenceColor">症状や施術内容によって変わりますが、半年〜1年通っていただく方が多いです。</span></p>
-            </div>
-        </li>
-        <li class="faq__items">
-            <div class="faq__question">
-                <p class="faq__alphabet">Q.</p>
-                <p class="faq__sentence">途中で解約することはできますか？</p>
-
-            </div>
-            <div class="faq__answer">
-                <p class="faq__alphabet">A.
-                <p class="faq__sentence"><span class="faq__sentenceColor">いつでも途中解約することが可能です。月の途中で解約される場合はその月の月額料金は発生し
-                    てしまいますので、予めご了承ください。
-                    </span></p>
-            </div>
-        </li>
-        <li class="faq__items">
-            <div class="faq__question">
-                <p class="faq__alphabet">Q.</p>
-                <p class="faq__sentence">アロマは何種類ありますか？</p>
-
-            </div>
-            <div class="faq__answer">
-                <p class="faq__alphabet">A.
-                <p class="faq__sentence"><span class="faq__sentenceColor">常時50種類以上のアロマをご用意しております。ご指定の香りがある場合はカウンセリング時に
-                    ご相談ください。</span></p>
-            </div>
-        </li>
-        <li class="faq__items">
-            <div class="faq__question">
-                <p class="faq__alphabet">Q.</p>
-                <p class="faq__sentence">施術当日はお化粧をしたままで良いですか？
-                </p>
-
-            </div>
-            <div class="faq__answer">
-                <p class="faq__alphabet">A.
-                <p class="faq__sentence"><span class="faq__sentenceColor">施術前にお化粧を落としていただくお部屋をご用意しておりますので、お化粧をしたままご来店
-                    いただけます。
-                    </span></p>
-            </div>
-        </li>
-        </ul>
+    <section class="tuition">
+        <h2 class="tuition__title">費用</h2>
+        <table class="tuition__table">
+            <tr class="tuition__tableRow">
+                <th class="tuition__tableHeaderKind">年間講数</th>
+                <th class="tuition__tableHeaderPrice">年間授業料（税込み）</th>
+            </tr>
+            <tr class="tuition__tableRow">
+                <td class="tuition__tableDataKind">5講</td>
+                <td class="tuition__tableDataPrice">¥24,500<span class="tuition__tableDataPrice-unit">円</span></td>
+            </tr>
+            <tr class="tuition__tableRow">
+                <td class="tuition__tableDataKind">10講</td>
+                <td class="tuition__tableDataPrice">¥49,000<small class="tuition__tableDataPrice-unit">円</small></td>
+            </tr>
+            <tr class="tuition__tableRow">
+                <td class="tuition__tableDataKind">11講</td>
+                <td class="tuition__tableDataPrice">¥53,900<small class="tuition__tableDataPrice-unit">円</small></td>
+            </tr>
+            <tr class="tuition__tableRow">
+                <td class="tuition__tableDataKind">12講</td>
+                <td class="tuition__tableDataPrice">¥58,800<small class="tuition__tableDataPrice-unit">円</small></td>
+            </tr>
+            <tr class="tuition__tableRow">
+                <td class="tuition__tableDataKind">21講</td>
+                <td class="tuition__tableDataPrice">¥107,800<small class="tuition__tableDataPrice-unit">円</small></td>
+            </tr>
+            <tr class="tuition__tableRow">
+                <td class="tuition__tableDataKind">24講</td>
+                <td class="tuition__tableDataPrice">¥117,600<small class="tuition__tableDataPrice-unit">円</small></td>
+            </tr>
+        </table>
     </section>
 
-    <section class="appeal">
-        <h2 class="title">美容に特化した<br class="onlySp">医師が監修したサロン</h2>
-        <ul class="appeal__list">
-            <li class="appeal__items"><i class="far fa-square"></i>&nbsp;&nbsp;無理な勧誘は一切ありません。</li>
-            <li class="appeal__items"><i class="far fa-square"></i>&nbsp;&nbsp;必要な施術のみをご案内します。</li>
-        </ul>
-        <div class="button">
-            <a href="#" class="button__anker">無料カウンセリング<i class="fas fa-chevron-right"></i></a>
-        </div>
-    </section> -->
+    <div class="application">
+        <p class="application__sentence">入学ご検討の方は、まずは入学説明会にお越しください</p>
+        <a href="#" class="application__btn">入学説明会に申し込む</a>
+    </div>
 
-    <footer class="footer">
-        <h2 class="footer__title">
-        <img class="footer__logo" src="img/logo_kirameki_total_beauty.png" alt="フッター用ロゴ画像">
-        </h2>
-        <div class="footer__copyright">
-        <small>&copy; 2004-2021 Kirameki Total Beauty Co. Ltd. All Rights Reserved.
-        </small>
+    <ul class="faqSite">
+        <li class="faqSite__itemFaq">
+            <a href="#">よくあるご質問</a>
+        </li>
+        <li class="faqSite__itemSite">
+            <a href="#">お近くの教室を探す</a>
+        </li>
+    </ul>
+
+    <footer>
+        <div class="copyright">
+            <small>&copy; copyright© 2023 Kira-Kira Juku All Rights Reserved.</small>
         </div>
     </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
