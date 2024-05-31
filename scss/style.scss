@@ -9,34 +9,30 @@ body {
     color: #000000;
     background-color: #ffffff;
     font-family: 'Noto Sans JP';
+    width: 100%;
     .header {
         margin: 0 auto;
         align-items: center;
         position: relative;
         display: flex;
-        padding: 1.45vw 0;
-        width: 62.5%;
+        justify-content: center;
+        padding: 1.8rem 0;
+        max-width: 72rem;
         @include mq($sp) {
-            padding-top:5.11vw;
-            padding-right: 4.26vw;
-            padding-bottom:5.46vw;
+            justify-content: start;
+            padding-left: 0.8125rem;
+            padding-top:1.25rem;
+            padding-bottom:1.1rem;
         }
         &__logo {
-            width: 18.55vw;
+            width: 23rem;
             @include mq($sp) {
-                margin-top: 0.26vw;
-                margin-left: 4.26vw;
+                width: 10.5rem;
             }
         }
-        &__logo img {
-            padding-left: 0.88vw;
-            @include mq($sp) {
-                width: 44.55vw;
-            }
-        } 
         &__nav {
-            width: 62.6vw;
-            padding-left: 7.7vw;
+            width: 61.25rem;
+            padding-left: 4.875rem;
             @include mq($sp) {
                 background-color: #ffffff;
                 position: absolute;
@@ -53,15 +49,17 @@ body {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            font-size: 1.04vw;
+            font-size: 1.25rem;
+            @include mq($md) {
+                font-size: 1rem;
+            }
             @include mq($sp) {
                 display: block;
                 position: absolute;
-                top: 17.33vw;
-                left: -18.66vw;
+                top: 3.9375rem;
+                left: 0.0625rem;
                 margin: 0;
-                background-color:#005BAC;
-                width: 160%;
+                background-color: #005BAC;
                 font-size: 5.3vw;
                 color: #ffffff;
             }
@@ -111,19 +109,19 @@ body {
             @include mq($sp) {
                 display: block;
                 position: absolute;
-                top: -5.6vw;
-                right: -18.66vw;
-                width: 18.34vw;
-                font-size: 19.2vw;
+                top: 0;
+                right: 0;
+                width: 4.375rem;
+                height: 4.375rem;
                 color: #ffffff;
                 background-color: #005BAC;
-                padding-bottom: 5.54vw;
             }
         }
         .fa-bars {
             position: relative;
-            font-size: 9.5625vw;
-            padding-left: 5.33vw;
+            font-size: 2.1875rem;
+            padding-top: 1.375rem;
+            padding-left: 1.25rem;
         }
     }
 
@@ -133,92 +131,113 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         @include mq($sp) {
-            background-image: url("../images/mainVIsual_sp.jpg.png");
-        }
-        &__pc {
-            display: block;
-            width: 100%;
-            @include mq($sp) {
-                display: none;
-            }
-        }
-        &__sp {
-            display: none;
-            @include mq($sp) {
-                display: block;
-                width: 100%;
-                height: 66.6vw;
-            }
+            background-image: url("../images/mainVIsual_sp.png");
+            background-size: cover;
         }
         &__contents {
             width: 100%;
-            padding-left: 21.35vw;
-            font-size: 2.6vw;
-            font-family: 'Noto Sans JP';
+            padding-left: 25.625rem;
+            font-family: "Noto Sans JP";
             font-weight: bold;
             margin: 0;
-            z-index: 1;   
+            @include mq($lg) {
+                padding-left: 6.25rem;
+            }
+            @include mq($md) {
+                padding-left: 6.25rem;
+                padding-top: 3.125rem;
+            } 
             @include mq($sp) {
-                width: 53.3vw;
-                top: 0;
-                padding-left: 4.2vw;
-                padding-top: 9vw;
+                width: 12.9rem;
+                padding-left: 1.9375rem;
+                padding-top: 2.125rem;
             }
         }
         &__achievement {
             display: flex;
-            padding-top: 5.2vw;
+            padding-top: 6.25rem;
+            @include mq($lg) {
+                padding-top: 1.125rem;
+            }
+            @include mq($md) {
+                padding-top: 0;
+            } 
+            @include mq($sp) {
+                padding-top: 0;
+            }
         }
         &__achievement img {
-            width: 2.2vw;
+            width: 3.2875rem;
+            height: 9.375rem;
+            @include mq($md) {
+                width: 1.125rem;
+                height: 4.375rem;
+            } 
             @include mq($sp) {
-                width: 6.5vw;
+                width: 1.5rem;
+                height: 4.25rem;
             }
         }
         &__message {
             text-align: center;
-            font-size: 1.04vw;
+            font-size: 1.25rem;
             font-weight: 400;
-            margin-top: 1vw;
-            padding: 0 1.8vw;
+            margin-top: 0.625rem;
+            padding: 0 1.25rem;
+            @include mq($md) {
+                font-size: 0.5rem;
+            }
             @include mq($sp) {
-                font-size: 2.93vw;
-                padding-top: 1.6vw;
+                font-size: 0.6rem;
+                padding: 0;
+                margin-top: 0;
             }
         }
         &__message p:last-child {
-            font-size: 2.8125vw;
+            font-size: 3.375rem;
             font-weight: bolder;
             font-family: "Poppins", sans-serif;
             color: #F11F8D;
             font-style: italic;
             padding-top: 1.04vw;
+            @include mq($md) {
+                font-size: 1rem;
+            }
             @include mq($sp) {
-                font-size: 6.66vw;
-                padding-top: 5.3vw;
+                font-size: 1.5625rem;
+                padding-top: 0.625rem;
             }
         }
         &__message-large {
-            font-size: 3.85vw;
+            font-size: 4.625rem;
+            @include mq($md) {
+                font-size: 1.5rem;
+            }
             @include mq($sp) {
-                font-size: 9.6vw;
+                font-size: 2.25rem;
             }
         }
         &__letters {
             margin-top: 3vw;
-            font-size: 3.125vw;
+            font-size: 3.75rem;
             color: #005BAC;
             line-height: 1.4;
+            @include mq($md) {
+                font-size: 1.25rem;
+            }
             @include mq($sp) {
-                font-size: 6.66vw;
+                font-size: 1.5625rem;
                 line-height: 1.6em;
             }
         }
         &__letters p:first-child{
-            font-size: 1.7vw;
+            font-size: 2.0625rem;
             color: #333333;
+            @include mq($md) {
+                font-size: 0.6875rem;
+            }
             @include mq($sp) {
-                font-size: 3.7vw;
+                font-size: 0.875rem;
             }
         }
         &__list {
@@ -226,21 +245,34 @@ body {
             justify-content: space-around;
             margin: 1.77vw auto;
             width: 60%;
+            @include mq($lg) {
+                width: 100%;
+            }
             @include mq($sp) {
                 display: none;
             }
         }
         &__items {
             margin-top: 3.9vw;
-            width: 17.7vw;
+            width: 21.25rem;
             padding: 0.31vw 0;
+            @include mq($lg) {
+                width: 23.25rem;
+            }
             @include mq($sp) {
                 margin-bottom: 0.26vw;
+                margin: 0 auto;
             }
         }
         &__items a {
             display: inherit;
-            font-size: 1.25vw;
+            font-size: 1.5rem;
+            @include mq($md) {
+                font-size: 1rem;
+            }
+            @include mq($sp) {
+                font-size: 1rem;
+            }
         }
         &__btn {
             font-family: "Noto Sans JP";
@@ -249,12 +281,12 @@ body {
             padding: 1.04vw 3.2vw;
             text-align: center;
             font-weight: bold;
+            font-size: 1.5rem;
             @include mq($sp) {
                 display: block;
                 position: relative;
                 width: 66.6vw;
                 margin: 0 auto 3.2vw;
-                font-size: 4.26vw;
                 background-color: #0097a7;
                 color: #ffffff;
                 border-radius: 30px;
@@ -274,7 +306,7 @@ body {
             display: none;
             @include mq($sp) {
                 display: block;
-                width: 66.6vw;
+                width: 100%;
                 margin: 6.4vw auto;
             }
         }
@@ -288,18 +320,18 @@ body {
         width: 62.5%;
         margin-top: 4.2vw;
         @include mq($sp)  {
-            width: 23.4375rem;
+            width: 100%;
             margin-top: 0;
         }
         &__title {
-            font-size: 1.87vw;
+            font-size: 2.25rem;
             font-weight: bold;
             @include mq($sp) {
                 font-size: 1.75rem;
             } 
         } 
         &__title-large {
-            font-size: 2.81vw;
+            font-size: 3.375rem;
             font-weight: bold;
             font-family: "Poppins", sans-serif;
             color: #F11F8D;
@@ -324,7 +356,7 @@ body {
             padding-left: 1%;
             @include mq($sp) {
                 width: 100%;
-                padding: 1rem;
+                padding: 4.26vw;
             }
         }
         &__items:nth-child(even) {
@@ -337,11 +369,11 @@ body {
             padding-left: 3%;
             @include mq($sp) {
                 width: 100%;
-                padding: 1rem;
+                padding: 4.26vw;
             }
         }
         &__point {
-            font-size: 1.45vw;
+            font-size: 1.75rem;
             font-style: italic;
             font-weight: bold;
             font-family: "Poppins", sans-serif;
@@ -351,18 +383,18 @@ body {
             }
         }
         &__point-large {
-            font-size: 2.18vw;
+            font-size: 2.625rem;
             @include mq($sp) {
                 font-size: 2.25rem;
             }
         }
         &__subtitle {
-            font-size: 1.2vw;
+            font-size: 1.5rem;
             font-weight: bold;
             padding-top: 1.7%;
             line-height: 1.4;
             @include mq($sp) {
-                font-size: 5.3vw;
+                font-size: 1.25rem;
             }
         }
         &__text {
@@ -370,15 +402,16 @@ body {
             text-align: start;
             padding-top: 2.8%;
             line-height: 1.8em;
+            font-size: 1rem;
             @include mq($sp) {
-                font-size: 4.2vw;
+                font-size: 1rem;
             }
 
         }
     }
 
     .application {
-        margin: 2.39vw auto; 
+        margin: 0 auto; 
         align-items: center;
         position: relative;
         text-align: center;
@@ -389,23 +422,23 @@ body {
             padding: 2.5rem 0;
         }
         &__sentence {
-            font-size: 0.83vw;
+            font-size: 1rem;
             @include mq($sp) {
-                font-size: 4.2vw;
+                font-size: 1rem;
                 text-align: center;
-                padding: 0 2.1875rem;
-                line-height: 1.75rem;
+                padding: 7.46vw 12.1vw;
+                line-height: 7.8vw;
             }
         }
         &__btn {
             display: block;
             margin: 1.19vw auto;
-            width: 18.75vw;
-            font-size: 1.23vw;
+            width: 22.5rem;
+            font-size: 1.5rem;
             font-family: "Noto Sans JP";
             background: linear-gradient(#0271e0 0%, #53a2f0 100%);
             color: #ffffff;
-            border-radius: 30px;
+            border-radius: 50px;
             padding: 1.3vw 0;
             padding-left: 24px;
             text-align: center;
@@ -413,12 +446,12 @@ body {
             @include mq($sp) {
                 display: block;
                 position: relative;
-                width: 80%;
-                font-size: 5vw;
+                width: 19.0625rem;
+                font-size: 1.25rem;
                 background-color: #0097a7;
                 color: #ffffff;
                 border-radius: 30px;
-                padding: 3%;
+                padding: 5.3vw 13.8vw;
                 margin-bottom: 0.75rem;
             }
         }
@@ -426,30 +459,33 @@ body {
 
     .course {
         width: 62.5%;
-        margin: 0 auto;
+        margin: 3.75vw auto;
         padding-bottom: 0.05vw;
         @include mq($sp) {
             width: 100%;
+            margin: 17vw auto;
         }
         &__title {
-            font-size: 1.87vw;
+            font-size: 2.25rem;
             text-align: center;
             font-weight: bold;
+            @include mq($sp) {
+            font-size: 1.75rem;
+            }
         }
-        .tab_box {
+        &__contents {
             width: 100%;
             margin: 0 auto;
         }
-        .tab_box .btn_area {
+        &__list {
             width: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             padding-top: 2vw;
-            padding-left: 0.93vw;
         }
-        .tab_box .tab_btn {
-            font-size: 1.25vw;
+        &__tabBtn {
+            font-size: 1.5rem;
             padding: 1.04vw 10.2vw;
             border-radius: 12px 12px 0px 0px ;
             // opacity: 0.5;
@@ -458,119 +494,152 @@ body {
             text-align: center;
             cursor: pointer;
             transition: all 0.2s ease 0s;
+            @include mq($lg) {
+                padding: 1.875rem 6.25rem;
+            }
+            @include mq($md) {
+                padding: 1.25rem 3.75rem;
+                font-size: 1rem;
+            }
             @include mq($sp) {
-                padding: 1.25rem 1.1875rem;
+                padding: 3.6vw 6.5vw;
+                font-size: 1.125rem;
             }
         }
-        .tab_box .tab_btn + .tab_btn {
+        &__tabBtn + &__tab_btn {
             margin-left: 0.41vw;
         }
-        .tab_box .tab_btn:hover {
+        &__tabBtn:hover {
             background-color: #dce1e4;
         }
-        .tab_box .tab_btn.active {
+        &__tabBtn.active {
             background:#F2F9FF;
             color:#333333;
         }
-        .tab_box .panel_area {
+        &__panelArea {
             background:#F2F9FF;
             width: 100%;
             margin: 0 auto 3.75vw;
             border-radius: 0px 0px 12px 12px ;
             padding-bottom: 1.66vw;
         }
-        .tab_box .tab_panel {
+        &__tabPanel {
             display:none;
             
         }
-        .tab_box .tab_panel li {
-            margin-top:2.03vw;
-            margin-left: 2.6vw;
+        &__item {
+            padding: 2rem;
         }
-        .tab_box .tab_panel img {
+        &__img {
             width: 97%;
         }
-        .tab_box .tab_panel p {
-            font-size: 1.04vw;
+        &__tabPanel p:first-child {
+            color: #005BAC;
+            font-weight: bold;
+            font-size: 1.25rem;
             padding-top: 1.09vw;
+            @include mq($sp) {
+                font-size: 1.25rem;
+            }
         }
-        .tab_box .tab_panel.active {
+        &__tabPanel p:last-child {
+            padding-left: 0.59vw;
+            font-size: 1.25rem;
+            padding-top: 1.09vw;
+            @include mq($sp) {
+                font-size: 1.25rem;
+            }
+        }
+        &__tabPanel.active {
             display:grid;
             grid-template-columns:1fr 1fr;
+            justify-content: space-between;
+            column-gap: 1.25rem;
             @include mq($sp) {
                 display: block;
             }
+        }
+        &__eachContents {
+            display: flex;
+        }
+        &__arrow {
+            width: 5%;
+            font-size: 1.25rem;
         }
     }
 
     .tuition {
         &__title {
-            font-size: 1.8vw;
+            font-size: 2.25rem;
             text-align: center;
-            padding-top: 0.3vw;
             font-weight: bold;
+            margin: 4.5rem 0;
             @include mq($sp) {
             font-size: 1.75rem;
-        }
+            }
         }
         &__table {
-            width: 31%;
+            width: 32%;
             margin: 1.66vw auto 3.75vw;
             border-collapse: collapse;
             border: 3px solid #CCCCCC;
+            @include mq($lg) {
+                width: 50%;
+            }
             @include mq($sp) {
-                margin: 0 auto;
+                margin: 0 auto 17vw;
             }
         }
         &__tableHeaderKind {
-            font-size: 0.93vw;
+            font-size: 1.125rem;
             padding: 1.4vw 0 1.4vw 1.6vw;
             background-color: #F5F5F5;
             border: 1px solid #CCCCCC;
             @include mq($sp) {
                 font-size: 1rem;
-                padding: 1.25rem 1.5625rem;
+                padding: 5vw 6.6vw;
             }
         }
         &__tableHeaderPrice {
-            font-size: 0.93vw;
+            font-size: 1.125rem;
             padding: 1.4vw 7.08vw 1.4vw 7.2vw;
             background-color:#F5F5F5;
             border: 1px solid #CCCCCC;
             @include mq($sp) {
                 font-size: 1rem;
-                padding: 1.25rem 2.375rem;
+                padding: 5.3vw 8vw;
             }
         }
         &__tableDataKind {
-            font-size: 0.93vw;
+            font-size: 1.25rem;
             padding: 1.35vw 2.2vw;
             border: 1px solid #CCCCCC;
             @include mq($sp) {
                 font-size: 1rem;
-                padding: 1.25rem 3rem;
+                padding: 5.3vw 12.8vw;
             }
         }
         &__tableDataPrice {
             color: #F23397;
-            font-size: 1.66vw;
-            padding: 0.83vw 8.33vw;
+            font-size: 2rem;
+            padding: 0.83vw 8.2vw;
             border: 1px solid #CCCCCC;
             font-family: "Poppins", sans-serif;
+            font-weight: bold;
             @include mq($sp) {
                 font-size: 1.75rem;
-                padding: 0.75rem 3.1875rem;
+                padding: 3.2vw 13.6vw;
             }
         }
         &__tableDataPrice-unit {
-            font-size: 0.62vw;
+            font-size: 1.125rem;
             @include mq($sp) {
                 font-size: 1rem;
             }
         }
     }
 
-    .faqSite {
+    .faqSearch {
         display: flex;
         color: #ffffff;
         @include mq($sp) {
@@ -597,7 +666,7 @@ body {
         &__itemFaq a {
             display: inline-block;
         }
-        &__itemSite {
+        &__itemSearch {
             width: 50%;
             padding: 7.13vw 17.5vw;
             background-image: url("../images/pht_classrooms.jpg.png");

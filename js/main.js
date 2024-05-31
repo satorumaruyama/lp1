@@ -7,11 +7,11 @@ $(function () {
 });
 
 // 費用コースタブ切り替え
-$('.tab_box .tab_btn').click(function() {
-  var index = $('.tab_box .tab_btn').index(this);
-  $('.tab_box .tab_btn, .tab_box .tab_panel').removeClass('active');
+$('.course__tabBtn').click(function() {
+  var index = $('.course__tabBtn').index(this);
+  $('.course__tabBtn, .course__contents .course__tabPanel').removeClass('active');
   $(this).addClass('active');
-  $('.tab_box .tab_panel').eq(index).addClass('active');
+  $('.course__contents .course__tabPanel').eq(index).addClass('active');
 });
 
 

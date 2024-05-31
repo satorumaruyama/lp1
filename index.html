@@ -7,8 +7,8 @@
     <meta name="description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。" />
     <meta property="og:description" content="難関大学の合格実績No.1のKira-Kira Jukuが、現役高校生・高卒生向け入学説明会の申し込みを開始しました。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://demo.techacademy.jp/sidejob-selfstudy1/">
-    <meta property="og:image" content="https://demo.techacademy.jp/sidejob-selfstudy1/images/main_pc.jpg">
+    <meta property="og:url" content="https://github.com/satorumaruyama/lp1">
+    <meta property="og:image" content="https://github.com/satorumaruyama/lp1/tree/main/images">
     <meta property="og:site_name" content="Kira-Kira Juku" />
     <!-- Webフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
                         <a href="#" class="header__navLink">費 用</a>
                     </li>
                     <li class="header__navItems">
-                        <a href="#" class="header__btn">入学説明会に申し込む</a>
+                        <a href="/entry.html" class="header__btn">入学説明会に申し込む</a>
                     </li>
                 </ul>
             </nav>
@@ -65,13 +65,13 @@
           </div>
         <ul class="mainVisual__list">
             <li class="mainVisual__items">
-                <a href="#" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
+                <a href="/inquiry.html" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
             </li>
             <li class="mainVisual__items">
-                <a href="#" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
+                <a href="/freetrial.html" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
             </li>
             <li class="mainVisual__items">
-                <a href="#" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
+                <a href="/request.html" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
             </li>
         </ul>
     </div>
@@ -120,52 +120,76 @@
 
     <div class="application">
         <p class="application__sentence">入学ご検討の方は、まずは入学説明会にお越しください</p>
-        <a href="#" class="application__btn">入学説明会に申し込む</a>
+        <a href="/entry.html" class="application__btn">入学説明会に申し込む</a>
     </div>
 
     <section class="course">
         <h2 class="course__title">コース・目的</h2>
-        <div class="tab_box">
-            <ul class="btn_area">
-                <p class="tab_btn active">学年別から選ぶ</p>
-                <p class="tab_btn">目的別から選ぶ</p>
+        <div class="course__contents">
+            <ul class="course__list">
+                <p class="course__tabBtn active">学年別から選ぶ</p>
+                <p class="course__tabBtn">目的別から選ぶ</p>
             </ul>
-            <ul class="panel_area">
-                <ul class="tab_panel active">
-                    <li>
-                        <img src="images/pht_cource01.png.png" alt="">
-                        <p>高卒生</p>
+            <ul class="course__panelArea">
+                <ul class="course__tabPanel active">
+                    <li class="course__item">
+                        <img src="images/pht_cource01.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>高卒生</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/pht_cource02.png.png" alt="">
-                        <p>高校3年生</p>
+                    <li class="course__item">
+                        <img src="images/pht_cource02.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>高校3年生</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/pht_cource03.png.png" alt="">
-                        <p>高校2年生</p>
+                    <li class="course__item">
+                        <img src="images/pht_cource03.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>高校2年生</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/pht_cource04.png.png" alt="">
-                        <p>高校1年生</p>
+                    <li class="course__item">
+                        <img src="images/pht_cource04.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>高校1年生</p>
+                        </div>
                     </li>
+                    
                 </ul>
-                <ul class="tab_panel">
-                    <li>
-                        <img src="images/pht_cource05.png.png" alt="">
-                        <p>難関大学・医学部合格を目指す</p>
+                <ul class="course__tabPanel">
+                    <li class="course__item">
+                        <img src="images/pht_cource05.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>難関大学・医学部合格を目指す</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/pht_cource06.png.png" alt="">
-                        <p>名門私立大学合格を目指す</p>
+                    <li class="course__item">
+                        <img src="images/pht_cource06.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>名門私立大学合格を目指す</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/pht_cource07.png.png" alt="">
-                        <p>国公立大学合格を目指す</p>
+                    <li class="course__item">
+                        <img src="images/pht_cource07.png.png" alt="" class="course__img">
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>国公立大学合格を目指す</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="course__item">
                         <img src="images/pht_cource08.png.png" alt="" class="course__img">
-                        <img src="images/arrow-right.png" alt="" class="course__arrow">
-                        <p>海外の大学合格を目指す</p>
+                        <div class="course__eachContents">
+                            <p>→</p>
+                            <p>海外の大学合格を目指す</p>
+                        </div>
                     </li>
                 </ul>
             </ul>
@@ -174,7 +198,7 @@
 
     <div class="application">
         <p class="application__sentence">入学ご検討の方は、まずは入学説明会にお越しください</p>
-        <a href="#" class="application__btn">入学説明会に申し込む</a>
+        <a href="/entry.html" class="application__btn">入学説明会に申し込む</a>
     </div>
 
     <section class="tuition">
@@ -213,15 +237,15 @@
 
     <div class="application">
         <p class="application__sentence">入学ご検討の方は、まずは入学説明会にお越しください</p>
-        <a href="#" class="application__btn">入学説明会に申し込む</a>
+        <a href="/entry.html" class="application__btn">入学説明会に申し込む</a>
     </div>
 
-    <ul class="faqSite">
-        <li class="faqSite__itemFaq">
-            <a href="#">よくあるご質問</a>
+    <ul class="faqSearch">
+        <li class="faqSearch__itemFaq">
+            <a href="/faq.html">よくあるご質問</a>
         </li>
-        <li class="faqSite__itemSite">
-            <a href="#">お近くの教室を探す</a>
+        <li class="faqSearch__itemSearch">
+            <a href="/search.html">お近くの教室を探す</a>
         </li>
     </ul>
 

@@ -1,4 +1,6 @@
 $sp: 767px;
+$md: 1200px;
+$lg: 1600px;
 
 @mixin mq($bp) {
     @media (max-width:($bp)) {
