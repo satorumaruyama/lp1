@@ -132,7 +132,7 @@ body {
         background-size: contain;
         @include mq($sp) {
             background-image: url("../images/mainVIsual_sp.png");
-            background-size: cover;
+            background-size: contain;
         }
         &__contents {
             width: 100%;
@@ -144,18 +144,18 @@ body {
                 padding-left: 6.25rem;
             }
             @include mq($md) {
-                padding-left: 6.25rem;
+                padding-left: 0.9375rem;
                 padding-top: 3.125rem;
             } 
             @include mq($sp) {
-                width: 12.9rem;
-                padding-left: 1.9375rem;
+                width: 9.9rem;
+                padding-left: 0.9375rem;
                 padding-top: 2.125rem;
             }
         }
         &__achievement {
             display: flex;
-            padding-top: 6.25rem;
+            padding-top: 6.5rem;
             @include mq($lg) {
                 padding-top: 1.125rem;
             }
@@ -184,11 +184,12 @@ body {
             font-weight: 400;
             margin-top: 0.625rem;
             padding: 0 1.25rem;
+            width: 14rem;
             @include mq($md) {
                 font-size: 0.5rem;
             }
             @include mq($sp) {
-                font-size: 0.6rem;
+                font-size: 0.6875rem;
                 padding: 0;
                 margin-top: 0;
             }
@@ -209,7 +210,7 @@ body {
             }
         }
         &__message-large {
-            font-size: 4.625rem;
+            font-size: 5rem;
             @include mq($md) {
                 font-size: 1.5rem;
             }
@@ -218,7 +219,8 @@ body {
             }
         }
         &__letters {
-            margin-top: 3vw;
+            margin-top: 1.875rem;
+            padding-top: 0.3125rem;
             font-size: 3.75rem;
             color: #005BAC;
             line-height: 1.4;
@@ -313,7 +315,7 @@ body {
     }
 
     .reason {
-        margin: 0 auto; 
+        margin: 0 auto 2.375rem; 
         align-items: center;
         text-align: center;
         position: relative;
@@ -326,6 +328,7 @@ body {
         &__title {
             font-size: 2.25rem;
             font-weight: bold;
+            margin-top: 5.3125rem;
             @include mq($sp) {
                 font-size: 1.75rem;
             } 
@@ -411,18 +414,16 @@ body {
     }
 
     .application {
-        margin: 0 auto; 
         align-items: center;
         position: relative;
         text-align: center;
         background-color: #FFEDED;
-        padding-top: 2.91vw;
-        padding-bottom: 2.91vw;
         @include mq($sp) {
             padding: 2.5rem 0;
         }
         &__sentence {
             font-size: 1rem;
+            padding-top: 3.5625rem;
             @include mq($sp) {
                 font-size: 1rem;
                 text-align: center;
@@ -432,7 +433,7 @@ body {
         }
         &__btn {
             display: block;
-            margin: 1.19vw auto;
+            margin: 1.5625rem auto 3.3125rem;
             width: 22.5rem;
             font-size: 1.5rem;
             font-family: "Noto Sans JP";
@@ -459,8 +460,8 @@ body {
 
     .course {
         width: 62.5%;
-        margin: 3.75vw auto;
-        padding-bottom: 0.05vw;
+        margin: 8.0625rem auto -0.5625rem;
+        padding-bottom: 1.0625rem;
         @include mq($sp) {
             width: 100%;
             margin: 17vw auto;
@@ -486,7 +487,7 @@ body {
         }
         &__tabBtn {
             font-size: 1.5rem;
-            padding: 1.04vw 10.2vw;
+            padding: 1.04vw 11.2vw;
             border-radius: 12px 12px 0px 0px ;
             // opacity: 0.5;
             color: #333;
@@ -527,12 +528,17 @@ body {
             display:none;
             
         }
-        &__item {
-            padding: 2rem;
+        &__item:nth-child(odd) {
+            padding-top: 2.5rem;
+            padding-left: 3rem;
         }
-        &__img {
-            width: 97%;
+        &__item:nth-child(even) {
+            padding-top: 2.5rem;
+            padding-left: 0.25rem;
         }
+        &__item img {
+            max-width: 105%;
+        } 
         &__tabPanel p:first-child {
             color: #005BAC;
             font-weight: bold;
@@ -570,16 +576,16 @@ body {
 
     .tuition {
         &__title {
-            font-size: 2.25rem;
+            font-size: 2.4rem;
             text-align: center;
             font-weight: bold;
-            margin: 4.5rem 0;
+            margin: 8rem auto 1.625rem;
             @include mq($sp) {
             font-size: 1.75rem;
             }
         }
         &__table {
-            width: 32%;
+            width:37.5rem;
             margin: 1.66vw auto 3.75vw;
             border-collapse: collapse;
             border: 3px solid #CCCCCC;
@@ -591,8 +597,11 @@ body {
             }
         }
         &__tableHeaderKind {
+            width: 9.0625rem;
+            text-align: center;
             font-size: 1.125rem;
-            padding: 1.4vw 0 1.4vw 1.6vw;
+            padding-top: 1.5625rem;
+            padding-bottom: 1.75rem;
             background-color: #F5F5F5;
             border: 1px solid #CCCCCC;
             @include mq($sp) {
@@ -601,8 +610,9 @@ body {
             }
         }
         &__tableHeaderPrice {
+            text-align: center;
             font-size: 1.125rem;
-            padding: 1.4vw 7.08vw 1.4vw 7.2vw;
+            padding-top: 1.5625rem;
             background-color:#F5F5F5;
             border: 1px solid #CCCCCC;
             @include mq($sp) {
@@ -611,8 +621,10 @@ body {
             }
         }
         &__tableDataKind {
+            text-align: center;
             font-size: 1.25rem;
-            padding: 1.35vw 2.2vw;
+            padding-top: 1.8125rem;
+            padding-bottom: 1.6875rem;
             border: 1px solid #CCCCCC;
             @include mq($sp) {
                 font-size: 1rem;
@@ -620,9 +632,10 @@ body {
             }
         }
         &__tableDataPrice {
+            text-align: center;
             color: #F23397;
             font-size: 2rem;
-            padding: 0.83vw 8.2vw;
+            padding-top: 1.8125rem;
             border: 1px solid #CCCCCC;
             font-family: "Poppins", sans-serif;
             font-weight: bold;
@@ -645,10 +658,10 @@ body {
         @include mq($sp) {
             display: block;
         }
-        &__itemFaq {
+        &__item {
             width: 50%;
-            padding: 7.13vw 17.5vw;
-            background-image: url("../images/pht_qa.jpg.png");
+            padding: 9.0625rem 3.125rem;
+            
             background-size: cover;
             text-align: center;
             font-size: 1.66vw;
@@ -663,26 +676,11 @@ body {
                 background-image: url("../images/sp_pht_qa.png");
             }
         }
-        &__itemFaq a {
-            display: inline-block;
+        &__item-faq {
+            background-image: url("../images/pht_qa.jpg.png");
         }
-        &__itemSearch {
-            width: 50%;
-            padding: 7.13vw 17.5vw;
+        &__item-search {
             background-image: url("../images/pht_classrooms.jpg.png");
-            background-size: cover;
-            text-align: center;
-            font-size: 1.66vw;
-            @include mq($sp) {
-                width: 100%;
-                font-size: 1.375rem;
-                text-align: start;
-                padding: 0;
-                padding-top: 4.1875rem;
-                padding-bottom: 4.4375rem;
-                padding-left: 1rem;
-                background-image: url("../images/sp_pht_classrooms.png");
-            }
         }
     }
 

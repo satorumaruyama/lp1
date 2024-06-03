@@ -518,7 +518,7 @@ body .mainVisual {
 @media (max-width: 767px) {
   body .mainVisual {
     background-image: url("../images/mainVIsual_sp.png");
-    background-size: cover;
+    background-size: contain;
   }
 }
 body .mainVisual__contents {
@@ -535,20 +535,20 @@ body .mainVisual__contents {
 }
 @media (max-width: 1200px) {
   body .mainVisual__contents {
-    padding-left: 6.25rem;
+    padding-left: 0.9375rem;
     padding-top: 3.125rem;
   }
 }
 @media (max-width: 767px) {
   body .mainVisual__contents {
-    width: 12.9rem;
-    padding-left: 1.9375rem;
+    width: 9.9rem;
+    padding-left: 0.9375rem;
     padding-top: 2.125rem;
   }
 }
 body .mainVisual__achievement {
   display: flex;
-  padding-top: 6.25rem;
+  padding-top: 6.5rem;
 }
 @media (max-width: 1600px) {
   body .mainVisual__achievement {
@@ -587,6 +587,7 @@ body .mainVisual__message {
   font-weight: 400;
   margin-top: 0.625rem;
   padding: 0 1.25rem;
+  width: 14rem;
 }
 @media (max-width: 1200px) {
   body .mainVisual__message {
@@ -595,7 +596,7 @@ body .mainVisual__message {
 }
 @media (max-width: 767px) {
   body .mainVisual__message {
-    font-size: 0.6rem;
+    font-size: 0.6875rem;
     padding: 0;
     margin-top: 0;
   }
@@ -620,7 +621,7 @@ body .mainVisual__message p:last-child {
   }
 }
 body .mainVisual__message-large {
-  font-size: 4.625rem;
+  font-size: 5rem;
 }
 @media (max-width: 1200px) {
   body .mainVisual__message-large {
@@ -633,7 +634,8 @@ body .mainVisual__message-large {
   }
 }
 body .mainVisual__letters {
-  margin-top: 3vw;
+  margin-top: 1.875rem;
+  padding-top: 0.3125rem;
   font-size: 3.75rem;
   color: #005BAC;
   line-height: 1.4;
@@ -750,7 +752,7 @@ body .mainVisual__listSp {
   }
 }
 body .reason {
-  margin: 0 auto;
+  margin: 0 auto 2.375rem;
   align-items: center;
   text-align: center;
   position: relative;
@@ -766,6 +768,7 @@ body .reason {
 body .reason__title {
   font-size: 2.25rem;
   font-weight: bold;
+  margin-top: 5.3125rem;
 }
 @media (max-width: 767px) {
   body .reason__title {
@@ -866,13 +869,10 @@ body .reason__text {
   }
 }
 body .application {
-  margin: 0 auto;
   align-items: center;
   position: relative;
   text-align: center;
   background-color: #FFEDED;
-  padding-top: 2.91vw;
-  padding-bottom: 2.91vw;
 }
 @media (max-width: 767px) {
   body .application {
@@ -881,6 +881,7 @@ body .application {
 }
 body .application__sentence {
   font-size: 1rem;
+  padding-top: 3.5625rem;
 }
 @media (max-width: 767px) {
   body .application__sentence {
@@ -892,7 +893,7 @@ body .application__sentence {
 }
 body .application__btn {
   display: block;
-  margin: 1.19vw auto;
+  margin: 1.5625rem auto 3.3125rem;
   width: 22.5rem;
   font-size: 1.5rem;
   font-family: "Noto Sans JP";
@@ -919,8 +920,8 @@ body .application__btn {
 }
 body .course {
   width: 62.5%;
-  margin: 3.75vw auto;
-  padding-bottom: 0.05vw;
+  margin: 8.0625rem auto -0.5625rem;
+  padding-bottom: 1.0625rem;
 }
 @media (max-width: 767px) {
   body .course {
@@ -951,7 +952,7 @@ body .course__list {
 }
 body .course__tabBtn {
   font-size: 1.5rem;
-  padding: 1.04vw 10.2vw;
+  padding: 1.04vw 11.2vw;
   border-radius: 12px 12px 0px 0px;
   color: #333;
   background: #f5f7f8;
@@ -996,11 +997,16 @@ body .course__panelArea {
 body .course__tabPanel {
   display: none;
 }
-body .course__item {
-  padding: 2rem;
+body .course__item:nth-child(odd) {
+  padding-top: 2.5rem;
+  padding-left: 3rem;
 }
-body .course__img {
-  width: 97%;
+body .course__item:nth-child(even) {
+  padding-top: 2.5rem;
+  padding-left: 0.25rem;
+}
+body .course__item img {
+  max-width: 105%;
 }
 body .course__tabPanel p:first-child {
   color: #005BAC;
@@ -1043,10 +1049,10 @@ body .course__arrow {
   font-size: 1.25rem;
 }
 body .tuition__title {
-  font-size: 2.25rem;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: bold;
-  margin: 4.5rem 0;
+  margin: 8rem auto 1.625rem;
 }
 @media (max-width: 767px) {
   body .tuition__title {
@@ -1054,7 +1060,7 @@ body .tuition__title {
   }
 }
 body .tuition__table {
-  width: 32%;
+  width: 37.5rem;
   margin: 1.66vw auto 3.75vw;
   border-collapse: collapse;
   border: 3px solid #CCCCCC;
@@ -1070,8 +1076,11 @@ body .tuition__table {
   }
 }
 body .tuition__tableHeaderKind {
+  width: 9.0625rem;
+  text-align: center;
   font-size: 1.125rem;
-  padding: 1.4vw 0 1.4vw 1.6vw;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.75rem;
   background-color: #F5F5F5;
   border: 1px solid #CCCCCC;
 }
@@ -1082,8 +1091,9 @@ body .tuition__tableHeaderKind {
   }
 }
 body .tuition__tableHeaderPrice {
+  text-align: center;
   font-size: 1.125rem;
-  padding: 1.4vw 7.08vw 1.4vw 7.2vw;
+  padding-top: 1.5625rem;
   background-color: #F5F5F5;
   border: 1px solid #CCCCCC;
 }
@@ -1094,8 +1104,10 @@ body .tuition__tableHeaderPrice {
   }
 }
 body .tuition__tableDataKind {
+  text-align: center;
   font-size: 1.25rem;
-  padding: 1.35vw 2.2vw;
+  padding-top: 1.8125rem;
+  padding-bottom: 1.6875rem;
   border: 1px solid #CCCCCC;
 }
 @media (max-width: 767px) {
@@ -1105,9 +1117,10 @@ body .tuition__tableDataKind {
   }
 }
 body .tuition__tableDataPrice {
+  text-align: center;
   color: #F23397;
   font-size: 2rem;
-  padding: 0.83vw 8.2vw;
+  padding-top: 1.8125rem;
   border: 1px solid #CCCCCC;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -1135,16 +1148,15 @@ body .faqSearch {
     display: block;
   }
 }
-body .faqSearch__itemFaq {
+body .faqSearch__item {
   width: 50%;
-  padding: 7.13vw 17.5vw;
-  background-image: url("../images/pht_qa.jpg.png");
+  padding: 9.0625rem 3.125rem;
   background-size: cover;
   text-align: center;
   font-size: 1.66vw;
 }
 @media (max-width: 767px) {
-  body .faqSearch__itemFaq {
+  body .faqSearch__item {
     width: 100%;
     font-size: 1.375rem;
     text-align: start;
@@ -1155,28 +1167,11 @@ body .faqSearch__itemFaq {
     background-image: url("../images/sp_pht_qa.png");
   }
 }
-body .faqSearch__itemFaq a {
-  display: inline-block;
+body .faqSearch__item-faq {
+  background-image: url("../images/pht_qa.jpg.png");
 }
-body .faqSearch__itemSearch {
-  width: 50%;
-  padding: 7.13vw 17.5vw;
+body .faqSearch__item-search {
   background-image: url("../images/pht_classrooms.jpg.png");
-  background-size: cover;
-  text-align: center;
-  font-size: 1.66vw;
-}
-@media (max-width: 767px) {
-  body .faqSearch__itemSearch {
-    width: 100%;
-    font-size: 1.375rem;
-    text-align: start;
-    padding: 0;
-    padding-top: 4.1875rem;
-    padding-bottom: 4.4375rem;
-    padding-left: 1rem;
-    background-image: url("../images/sp_pht_classrooms.png");
-  }
 }
 body footer {
   background-color: #DDDDDD;
