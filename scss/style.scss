@@ -13,7 +13,6 @@ body {
     .header {
         margin: 0 auto;
         align-items: center;
-        position: relative;
         display: flex;
         justify-content: center;
         padding: 1.8rem 0;
@@ -28,6 +27,7 @@ body {
             width: 23rem;
             @include mq($sp) {
                 width: 10.5rem;
+                padding-left: 0.1875rem;
             }
         }
         &__nav {
@@ -36,15 +36,12 @@ body {
             @include mq($sp) {
                 background-color: #ffffff;
                 position: absolute;
-                top: 8.5%;
+                top: 0;
                 left: 0;
                 width: 100%;
                 z-index: 9999;
             }
-        }
-        &__navLink {
-            position: relative;
-        }     
+        }    
         &__navList {
             width: 100%;
             display: flex;
@@ -120,7 +117,7 @@ body {
         .fa-bars {
             position: relative;
             font-size: 2.1875rem;
-            padding-top: 1.375rem;
+            padding-top: 0.875rem;
             padding-left: 1.25rem;
         }
     }
@@ -129,10 +126,12 @@ body {
         position: relative;
         background-image: url("../images/mainVIsual_pc.jpg.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        aspect-ratio: 1920 / 651;
         @include mq($sp) {
             background-image: url("../images/mainVIsual_sp.png");
-            background-size: contain;
+            background-size: 100%;
+            aspect-ratio: unset;
         }
         &__contents {
             width: 100%;
@@ -140,42 +139,50 @@ body {
             font-family: "Noto Sans JP";
             font-weight: bold;
             margin: 0;
-            @include mq($lg) {
-                padding-left: 6.25rem;
-            }
             @include mq($md) {
-                padding-left: 0.9375rem;
-                padding-top: 3.125rem;
+                padding-left: 14.9375rem;
+                padding-top: 2.125rem;
             } 
             @include mq($sp) {
                 width: 9.9rem;
                 padding-left: 0.9375rem;
-                padding-top: 2.125rem;
+                padding-top: 1.9375rem;
             }
         }
         &__achievement {
             display: flex;
             padding-top: 6.5rem;
-            @include mq($lg) {
-                padding-top: 1.125rem;
-            }
             @include mq($md) {
                 padding-top: 0;
             } 
             @include mq($sp) {
-                padding-top: 0;
+                width: 9.1875rem;
+                padding-top: 0.3125rem;
             }
         }
         &__achievement img {
             width: 3.2875rem;
             height: 9.375rem;
             @include mq($md) {
-                width: 1.125rem;
-                height: 4.375rem;
+                width: 2.125rem;
+                height: 6.375rem;
             } 
             @include mq($sp) {
                 width: 1.5rem;
                 height: 4.25rem;
+            }
+        }
+        &__framePc {
+            width: 3.2875rem;
+            @include mq($sp) {
+                display: none;
+            }
+        }
+        &__frameSp {
+            display: none;
+            @include mq($sp) {
+                display: block;
+                width: 1.5044rem;
             }
         }
         &__message {
@@ -186,12 +193,15 @@ body {
             padding: 0 1.25rem;
             width: 14rem;
             @include mq($md) {
-                font-size: 0.5rem;
+                font-size: 1rem;
+                width: 9rem;
+                padding: 0;
             }
             @include mq($sp) {
                 font-size: 0.6875rem;
                 padding: 0;
                 margin-top: 0;
+                width: 6.1875rem;
             }
         }
         &__message p:last-child {
@@ -202,20 +212,21 @@ body {
             font-style: italic;
             padding-top: 1.04vw;
             @include mq($md) {
-                font-size: 1rem;
+                font-size: 2rem;
             }
             @include mq($sp) {
                 font-size: 1.5625rem;
-                padding-top: 0.625rem;
+                padding-top: 0.5625rem;
             }
         }
         &__message-large {
             font-size: 5rem;
             @include mq($md) {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
             @include mq($sp) {
                 font-size: 2.25rem;
+                padding-top: 0.125rem;
             }
         }
         &__letters {
@@ -225,18 +236,20 @@ body {
             color: #005BAC;
             line-height: 1.4;
             @include mq($md) {
-                font-size: 1.25rem;
+                font-size: 2.25rem;
             }
             @include mq($sp) {
+                margin-top: 0.0625rem;
                 font-size: 1.5625rem;
-                line-height: 1.6em;
+                line-height: 2.125rem;
+                width: 11rem;
             }
         }
         &__letters p:first-child{
             font-size: 2.0625rem;
             color: #333333;
             @include mq($md) {
-                font-size: 0.6875rem;
+                font-size: 1.2rem;
             }
             @include mq($sp) {
                 font-size: 0.875rem;
@@ -245,35 +258,41 @@ body {
         &__list {
             display: flex;
             justify-content: space-around;
-            margin: 1.77vw auto;
+            margin: 2.8125rem auto;
             width: 60%;
-            @include mq($lg) {
-                width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -4vw;
+            @include mq($md) {
+                top: 70%;
             }
             @include mq($sp) {
-                display: none;
+                display: block;
+                position: relative;
+                margin: 3rem 0 2.25rem;
+                width: 23.4375rem;
             }
         }
         &__items {
             margin-top: 3.9vw;
             width: 21.25rem;
             padding: 0.31vw 0;
-            @include mq($lg) {
-                width: 23.25rem;
-            }
             @include mq($sp) {
+                width: 100%;
                 margin-bottom: 0.26vw;
                 margin: 0 auto;
             }
         }
         &__items a {
-            display: inherit;
             font-size: 1.5rem;
-            @include mq($md) {
-                font-size: 1rem;
-            }
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             @include mq($sp) {
                 font-size: 1rem;
+                width: 15.625rem;
             }
         }
         &__btn {
@@ -304,33 +323,25 @@ body {
         &__btn-emerald {
             background-color: #3AC8AD;
         }
-        &__listSp {
-            display: none;
-            @include mq($sp) {
-                display: block;
-                width: 100%;
-                margin: 6.4vw auto;
-            }
-        }
     }
 
     .reason {
-        margin: 0 auto 2.375rem; 
+        margin: 0 auto 5.0625rem; 
         align-items: center;
         text-align: center;
-        position: relative;
         width: 62.5%;
         margin-top: 4.2vw;
         @include mq($sp)  {
-            width: 100%;
-            margin-top: 0;
+            width: 21.4375rem;
+            margin: 0 auto;
         }
         &__title {
             font-size: 2.25rem;
             font-weight: bold;
-            margin-top: 5.3125rem;
+            margin-top: 7.3125rem;
             @include mq($sp) {
                 font-size: 1.75rem;
+                margin-top: 2.375rem;
             } 
         } 
         &__title-large {
@@ -340,39 +351,50 @@ body {
             color: #F11F8D;
             @include mq($sp)  {
                 font-size: 2.5rem;
+
             }
         } 
         &__list {
             margin-top: 2.03vw;
+            @include mq($sp) {
+                margin-top: 1.375rem;
+            }
         }
         &__items {
             display: flex;
-            padding-bottom: 2%;
-            align-items: flex-start;
-            margin-top: 1.2%;
+            align-items: center;
+            width: 100%;
+            column-gap: 2.5rem;
+            margin: 0 auto 2.9375rem;
             @include mq($sp) {
                 display: block;
+                width: 21.4375rem;
+                margin-bottom: 2.125rem;
             }
         }
-        &__img {
-            width: 49%;
-            padding-left: 1%;
+        &__imgPc {
+            width: 35rem;
             @include mq($sp) {
-                width: 100%;
-                padding: 4.26vw;
+                display: none;
+            }
+        }
+        &__imgSp {
+            display: none;
+            @include mq($sp) {
+                display: block;
             }
         }
         &__items:nth-child(even) {
             flex-direction: row-reverse;
         }
         &__textcontents {
-            width: 50%;
+            width: 35rem;
             text-align: start;
-            padding-top: 1%;
-            padding-left: 3%;
+            padding-top: 0.75rem;
             @include mq($sp) {
-                width: 100%;
-                padding: 4.26vw;
+                width: 21.4375rem;
+                padding: 0;
+                margin-top: 0.8125rem;
             }
         }
         &__point {
@@ -383,31 +405,39 @@ body {
             color: #F11F8D;
             @include mq($sp) {
                 font-size: 1.5rem;
+                padding-top: 0.125rem;
             }
         }
         &__point-large {
             font-size: 2.625rem;
+            margin-left: 0.625rem;
             @include mq($sp) {
                 font-size: 2.25rem;
             }
         }
         &__subtitle {
+            width: 102%;
             font-size: 1.5rem;
             font-weight: bold;
-            padding-top: 1.7%;
-            line-height: 1.4;
+            padding-top: 0.3125rem;
+            line-height: 2.4375rem;
             @include mq($sp) {
                 font-size: 1.25rem;
+                padding-top: 0.3125rem;
+                line-height: 1.875rem;
             }
         }
         &__text {
-            width: 98%;
+            width: 103%;
             text-align: start;
             padding-top: 2.8%;
             line-height: 1.8em;
             font-size: 1rem;
             @include mq($sp) {
+                width: 21.4375rem;
                 font-size: 1rem;
+                padding-top: 0.375rem;
+                line-height: 1.75rem;
             }
 
         }
@@ -415,11 +445,11 @@ body {
 
     .application {
         align-items: center;
-        position: relative;
         text-align: center;
         background-color: #FFEDED;
+        padding-bottom: 0.25rem;
         @include mq($sp) {
-            padding: 2.5rem 0;
+            padding: 1.0625rem 0 1.875rem;
         }
         &__sentence {
             font-size: 1rem;
@@ -427,7 +457,7 @@ body {
             @include mq($sp) {
                 font-size: 1rem;
                 text-align: center;
-                padding: 7.46vw 12.1vw;
+                padding: 5vw 11vw 0px;
                 line-height: 7.8vw;
             }
         }
@@ -445,38 +475,46 @@ body {
             text-align: center;
             font-weight: bold;
             @include mq($sp) {
-                display: block;
+                display: flex;
                 position: relative;
                 width: 19.0625rem;
                 font-size: 1.25rem;
                 background-color: #0097a7;
                 color: #ffffff;
                 border-radius: 30px;
-                padding: 5.3vw 13.8vw;
+                padding: 6.3vw 13.8vw;
                 margin-bottom: 0.75rem;
+                margin-top: 8px;
+                white-space: nowrap;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
 
     .course {
         width: 62.5%;
-        margin: 8.0625rem auto -0.5625rem;
+        margin: 4.5rem auto -0.5625rem;
         padding-bottom: 1.0625rem;
         @include mq($sp) {
             width: 100%;
-            margin: 17vw auto;
+            margin: 17vw auto 5.5625rem;
         }
         &__title {
             font-size: 2.25rem;
             text-align: center;
             font-weight: bold;
             @include mq($sp) {
-            font-size: 1.75rem;
+                font-size: 1.75rem;
+                padding-left: 0.75rem;
             }
         }
         &__contents {
             width: 100%;
             margin: 0 auto;
+            @include mq($sp) {
+                width: 21.4375rem;
+            }
         }
         &__list {
             width: 100%;
@@ -484,10 +522,14 @@ body {
             display: flex;
             justify-content: space-between;
             padding-top: 2vw;
+            column-gap: 2.125rem;
+            @include mq($sp) {
+                column-gap: 0.9375rem;
+            }
         }
         &__tabBtn {
             font-size: 1.5rem;
-            padding: 1.04vw 11.2vw;
+            padding: 1.25rem 16.625rem 1.25rem 6.25rem;
             border-radius: 12px 12px 0px 0px ;
             // opacity: 0.5;
             color: #333;
@@ -495,20 +537,16 @@ body {
             text-align: center;
             cursor: pointer;
             transition: all 0.2s ease 0s;
-            @include mq($lg) {
-                padding: 1.875rem 6.25rem;
-            }
+            white-space: nowrap;
             @include mq($md) {
-                padding: 1.25rem 3.75rem;
+                padding: 1.25rem;
                 font-size: 1rem;
             }
             @include mq($sp) {
-                padding: 3.6vw 6.5vw;
+                width: 10.25rem;
+                padding-top: 2.25rem;
                 font-size: 1.125rem;
             }
-        }
-        &__tabBtn + &__tab_btn {
-            margin-left: 0.41vw;
         }
         &__tabBtn:hover {
             background-color: #dce1e4;
@@ -530,16 +568,33 @@ body {
         }
         &__item:nth-child(odd) {
             padding-top: 2.5rem;
-            padding-left: 3rem;
+            padding-left: 2rem;
+            @include mq($sp) {
+                padding-left: 0;
+                padding-top: 2.125rem;
+            }
         }
         &__item:nth-child(even) {
             padding-top: 2.5rem;
             padding-left: 0.25rem;
+            @include mq($sp) {
+                padding-left: 0;
+                padding-top: 1.875rem;
+            }
         }
-        &__item img {
-            max-width: 105%;
-        } 
-        &__tabPanel p:first-child {
+        &__imgPc {
+            display: block;
+            @include mq($sp) {
+                display: none;
+            }
+        }
+        &__imgSp {
+            display: none;
+            @include mq($sp) {
+                display: block;
+            }
+        }
+        .bi-arrow-right:first-child {
             color: #005BAC;
             font-weight: bold;
             font-size: 1.25rem;
@@ -552,6 +607,7 @@ body {
             padding-left: 0.59vw;
             font-size: 1.25rem;
             padding-top: 1.09vw;
+            font-weight: bold;
             @include mq($sp) {
                 font-size: 1.25rem;
             }
@@ -567,6 +623,9 @@ body {
         }
         &__eachContents {
             display: flex;
+            @include mq($sp) {
+                padding-top: 0.8125rem;         
+            }
         }
         &__arrow {
             width: 5%;
@@ -575,13 +634,20 @@ body {
     }
 
     .tuition {
+        padding-bottom: 0.625rem;
+        @include mq($sp) {
+            padding-bottom: 0;
+        }
         &__title {
             font-size: 2.4rem;
             text-align: center;
             font-weight: bold;
-            margin: 8rem auto 1.625rem;
+            margin: 4.125rem auto 1.625rem;
             @include mq($sp) {
-            font-size: 1.75rem;
+                font-size: 1.75rem;
+                margin-top: 3.6875rem;
+                padding-left: 0.875rem;
+                margin-bottom: 1.3125rem;
             }
         }
         &__table {
@@ -589,10 +655,8 @@ body {
             margin: 1.66vw auto 3.75vw;
             border-collapse: collapse;
             border: 3px solid #CCCCCC;
-            @include mq($lg) {
-                width: 50%;
-            }
             @include mq($sp) {
+                width: 21.4375rem;
                 margin: 0 auto 17vw;
             }
         }
@@ -604,9 +668,11 @@ body {
             padding-bottom: 1.75rem;
             background-color: #F5F5F5;
             border: 1px solid #CCCCCC;
+            white-space: nowrap;
             @include mq($sp) {
                 font-size: 1rem;
-                padding: 5vw 6.6vw;
+                width: 7.25rem;
+                padding-bottom: 0;
             }
         }
         &__tableHeaderPrice {
@@ -615,9 +681,11 @@ body {
             padding-top: 1.5625rem;
             background-color:#F5F5F5;
             border: 1px solid #CCCCCC;
+            white-space: nowrap;
             @include mq($sp) {
                 font-size: 1rem;
-                padding: 5.3vw 8vw;
+                padding: 1.4375rem;
+                text-align: start;
             }
         }
         &__tableDataKind {
@@ -626,9 +694,11 @@ body {
             padding-top: 1.8125rem;
             padding-bottom: 1.6875rem;
             border: 1px solid #CCCCCC;
+            white-space: nowrap;
             @include mq($sp) {
                 font-size: 1rem;
-                padding: 5.3vw 12.8vw;
+                padding-bottom: 1.375rem;
+                padding-top: 1.5625rem;
             }
         }
         &__tableDataPrice {
@@ -639,9 +709,11 @@ body {
             border: 1px solid #CCCCCC;
             font-family: "Poppins", sans-serif;
             font-weight: bold;
+            white-space: nowrap;
             @include mq($sp) {
                 font-size: 1.75rem;
-                padding: 3.2vw 13.6vw;
+                padding-top: 1.1875rem;
+                padding-left: 0.3125rem;
             }
         }
         &__tableDataPrice-unit {
@@ -660,38 +732,49 @@ body {
         }
         &__item {
             width: 50%;
-            padding: 9.0625rem 3.125rem;
-            
-            background-size: cover;
             text-align: center;
             font-size: 1.66vw;
+            position: relative;
             @include mq($sp) {
                 width: 100%;
                 font-size: 1.375rem;
                 text-align: start;
                 padding: 0;
-                padding-top: 4.1875rem;
-                padding-bottom: 4.4375rem;
-                padding-left: 1rem;
-                background-image: url("../images/sp_pht_qa.png");
             }
         }
-        &__item-faq {
-            background-image: url("../images/pht_qa.jpg.png");
+        &__item a {
+            position: absolute;
+            top: 8.4375rem;
+            left: 21.25rem;
+            z-index: 1;
+            width: 17.9375rem;
+            @include mq($sp) {
+                top: 4.25rem;
+                left: 0.9375rem;
+            }
         }
-        &__item-search {
-            background-image: url("../images/pht_classrooms.jpg.png");
+        &__imgPc {
+            @include mq($sp) {
+                display: none;
+            }
+        }
+        &__imgSp {
+            display: none;
+            @include mq($sp) {
+                display: block;
+                width: 100%;
+            }
         }
     }
 
     footer {
         background-color: #DDDDDD;
         text-align: center;
-        font-size: 0.67vw;
-        padding: 2.6vw 0;
+        padding: 2.75rem 0;
         @include mq($sp) {
-            font-size: 3.4vw ;
-            padding: 8.5vw;
+            padding:0;
+            padding-top: 2.25rem;
+            padding-bottom: 1.75rem;
         }
     }
 }

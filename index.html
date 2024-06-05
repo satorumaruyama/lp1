@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <!-- その他のライブラリのCSS -->
     <link rel="stylesheet" href="scss/animate.css">
     <link rel="stylesheet" href="scss/style.css">
@@ -25,20 +26,20 @@
 
 <body>
     <header class="header">
-            <h1 class="header__logo"><a href="#"><img src="images/header-logo.png" alt="Kirameki Total Beauty"></a></h1>
+            <h1 class="header__logo"><a href="#"><img src="images/header-logo.png" alt="Kira-Kira Juku"></a></h1>
             <nav class="header__nav">
                 <ul class="header__navList">
                     <li class="header__navItems">
-                        <a href="#" class="header__navLink">選ばれる3つの理由</a>
+                        <a href="#">選ばれる3つの理由</a>
                     </li>
                     <li class="header__navItems">
-                        <a href="#" class="header__navLink">コース・目的</a>
+                        <a href="#">コース・目的</a>
                     </li>
                     <li class="header__navItems">
-                        <a href="#" class="header__navLink">費 用</a>
+                        <a href="#">費 用</a>
                     </li>
                     <li class="header__navItems">
-                        <a href="/entry.html" class="header__btn">入学説明会に申し込む</a>
+                        <a href="entry.html" class="header__btn">入学説明会に申し込む</a>
                     </li>
                 </ul>
             </nav>
@@ -50,12 +51,14 @@
     <div class="mainVisual">
         <div class="mainVisual__contents">
             <div class="mainVisual__achievement">
-                <img src="images/frame-left.png" alt="">
+                <img src="images/frame-left.png" class="mainVisual__framePc">
+                <img src="images/sp_frame-left.png" class="mainVisual__frameSp">
                 <div class="mainVisual__message">
                     <p>難関大学の合格実績</p>
                     <p>No.<span class="mainVisual__message-large">1</span></p>
                 </div>
-                <img src="images/frame-right.png" alt="">
+                <img src="images/frame-right.png" class="mainVisual__framePc">
+                <img src="images/sp_frame-right.png" class="mainVisual__frameSp">
             </div>
             <div class="mainVisual__letters">
                 <p>現役高校生・高卒生</p>
@@ -65,34 +68,23 @@
           </div>
         <ul class="mainVisual__list">
             <li class="mainVisual__items">
-                <a href="/inquiry.html" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
+                <a href="inquiry.html" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
             </li>
             <li class="mainVisual__items">
-                <a href="/freetrial.html" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
+                <a href="freetrial.html" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
             </li>
             <li class="mainVisual__items">
-                <a href="/request.html" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
+                <a href="request.html" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
             </li>
         </ul>
     </div>
-
-    <ul class="mainVisual__listSp">
-        <li class="mainVisual__items">
-            <a href="#" class="mainVisual__btn mainVisual__btn-green">入学のお問い合わせ</a>
-        </li>
-        <li class="mainVisual__items">
-            <a href="#" class="mainVisual__btn mainVisual__btn-orange">無料体験に申し込む  </a>
-        </li>
-        <li class="mainVisual__items">
-            <a href="#" class="mainVisual__btn mainVisual__btn-emerald">資料請求する</a>
-        </li>
-    </ul>
 
     <section class="reason">
         <h2 class="reason__title">選ばれる<span class="reason__title-large">3</span>つの理由</h2>
         <ul class="reason__list">
             <li class="reason__items">
-                <img src="images/pht_reason01.jpg.png" alt="選ばれる理由1" class="reason__img">
+                <img src="images/pht_reason01.jpg.png" class="reason__imgPc">
+                <img src="images/sp_reason1.png" class="reason__imgSp">
                 <div class="reason__textcontents">
                     <h3 class="reason__point">Point<span class="reason__point-large">1</span></h3>
                     <p class="reason__subtitle">実績のある講師陣だから安心</p>
@@ -100,7 +92,8 @@
                 </div>
             </li>
             <li class="reason__items">
-                <img src="images/pht_reason02.jpg.png" alt="選ばれる理由2" class="reason__img">
+                <img src="images/pht_reason02.jpg.png" class="reason__imgPc">
+                <img src="images/sp_reason2.png" class="reason__imgSp">
                 <div class="reason__textcontents">
                     <h3 class="reason__point">Point<span class="reason__point-large">2</span></h3>
                     <p class="reason__subtitle">オンラインにも対応だから、早送り巻き戻し視聴できる。</p>
@@ -108,7 +101,8 @@
                 </div>
             </li>
             <li class="reason__items">
-                <img src="images/pht_reason03.jpg.png" alt="選ばれる理由3" class="reason__img">
+                <img src="images/pht_reason03.jpg.png" class="reason__imgPc">
+                <img src="images/sp_reason3.png" class="reason__imgSp">
                 <div class="reason__textcontents">
                     <h3 class="reason__point">Point<span class="reason__point-large">3</span></h3>
                     <p class="reason__subtitle">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</p>
@@ -133,30 +127,34 @@
             <div class="course__panelArea">
                 <ul class="course__tabPanel active">
                     <li class="course__item">
-                        <img src="images/pht_cource01.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource01.png" class="course__imgPc">
+                        <img src="images/sp_cource01.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>高卒生</p>
                         </div>
                     </li>
                     <li class="course__item">
-                        <img src="images/pht_cource02.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource02.png" class="course__imgPc">
+                        <img src="images/sp_cource02.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>高校3年生</p>
                         </div>
                     </li>
                     <li class="course__item">
-                        <img src="images/pht_cource03.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource03.png" class="course__imgPc">
+                        <img src="images/sp_cource03.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>高校2年生</p>
                         </div>
                     </li>
                     <li class="course__item">
-                        <img src="images/pht_cource04.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource04.png" class="course__imgPc">
+                        <img src="images/sp_cource04.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>高校1年生</p>
                         </div>
                     </li>
@@ -164,30 +162,34 @@
                 </ul>
                 <ul class="course__tabPanel">
                     <li class="course__item">
-                        <img src="images/pht_cource05.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource05.png" class="course__imgPc">
+                        <img src="images/sp_cource05.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>難関大学・医学部合格を目指す</p>
                         </div>
                     </li>
                     <li class="course__item">
-                        <img src="images/pht_cource06.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource06.png" class="course__imgPc">
+                        <img src="images/sp_cource06.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>名門私立大学合格を目指す</p>
                         </div>
                     </li>
                     <li class="course__item">
-                        <img src="images/pht_cource07.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource07.png" class="course__imgPc">
+                        <img src="images/sp_cource07.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>国公立大学合格を目指す</p>
                         </div>
                     </li>
                     <li class="course__item">
-                        <img src="images/pht_cource08.png.png" alt="" class="course__img">
+                        <img src="images/pht_cource08.png" class="course__imgPc">
+                        <img src="images/sp_cource08.png" class="course__imgSp">
                         <div class="course__eachContents">
-                            <p>→</p>
+                            <i class="bi bi-arrow-right"></i>
                             <p>海外の大学合格を目指す</p>
                         </div>
                     </li>
@@ -241,11 +243,15 @@
     </div>
 
     <ul class="faqSearch">
-        <li class="faqSearch__item faqSearch__item-faq">
-            <a href="/faq.html">よくあるご質問</a>
+        <li class="faqSearch__item">
+            <img src="images/pht_qa.png" class="faqSearch__imgPc">
+            <img src="images/sp_pht_qa.png" class="faqSearch__imgSp">
+            <a href="faq.html">よくあるご質問</a>
         </li>
-        <li class="faqSearch__item faqSearch__item-search">
-            <a href="/search.html">お近くの教室を探す</a>
+        <li class="faqSearch__item">
+            <img src="images/pht_classrooms.png" class="faqSearch__imgPc">
+            <img src="images/sp_pht_classrooms.png" class="faqSearch__imgSp">
+            <a href="search.html">お近くの教室を探す</a>
         </li>
     </ul>
 
